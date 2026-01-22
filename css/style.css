@@ -30,6 +30,8 @@ main{
   display:grid;
   grid-template-columns:repeat(4,1fr);
   gap: 3%;
+  height:100%;
+  overflow-y: hidden;
 }
 
 .product-list img{
@@ -38,13 +40,16 @@ main{
 }
 
 .product-list li {
+ 
   list-style-type: none;
 }
 /*View More*/
 
 .link-text{
+  
   display:block;
   text-Align:center;
+  
 }
 
 /* footer */
@@ -61,5 +66,4 @@ footer ul{
 }
 footer li{
   list-style-type:none;
-  
 }
