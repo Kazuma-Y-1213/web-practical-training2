@@ -6,7 +6,7 @@ a {
   color: black;
 }
 
-/* 左右の余白の設定 */
+/* 全体の左右の余白の設定 */
 body{
   width:70%;
   margin-left:auto;
@@ -23,9 +23,6 @@ header{
 
 
 /* main リストのデザイン */
-main{
-  height:auto;
-}
 .product-list{
   display:grid;
   grid-template-columns:repeat(4,1fr);
@@ -54,16 +51,31 @@ main{
 
 /* footer */
 footer{
-  
-  margin-bottom:0px;
   display:flex;
   justify-content:space-between;
 }
 footer ul{
   display:flex;
   gap: 1rem;
-  margin-bottom:0px;
 }
 footer li{
   list-style-type:none;
+  
+}
+
+
+@media(max-width:800px){
+  header img{
+    width:70%;
+  }
+  .product-list{
+  grid-template-columns: repeat(2, 1fr);
+  }
+  .product-list{
+    margin-bottom: 0rem;
+  }
+  footer{
+    display:block;
+  }
+  
 }
