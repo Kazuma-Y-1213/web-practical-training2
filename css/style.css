@@ -79,3 +79,25 @@ footer li{
   }
   
 }
+
+
+
+/* itemXX 部分 */
+.item{
+  display:flex;
+}
+.item div{
+  width:50%;
+}
+
+
+.item table{
+  border-collapse:separate;
+  border-spacing:1rem 0;
+}
+.item th{
+  text-align:left;
+}
+.item td{
+margin-left:1rem;
+}
