@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/* aタグの設定 */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* 左右の余白の設定 */
+body{
+  width:70%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+/*header*/
+header{
+  display:flex;
+  justify-content:space-between;
+}
+
+
+
+/* main リストのデザイン */
+main{
+  height:auto;
+}
+.product-list{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap: 3%;
+}
+
+.product-list img{
+  max-width:100%;
+  
+}
+
+.product-list li {
+  list-style-type: none;
+}
+/*View More*/
+
+.link-text{
+  display:block;
+  text-Align:center;
+}
+
+/* footer */
+footer{
+  
+  margin-bottom:0px;
+  display:flex;
+  justify-content:space-between;
+}
+footer ul{
+  display:flex;
+  gap: 1rem;
+  margin-bottom:0px;
+}
+footer li{
+  list-style-type:none;
+  
+}
