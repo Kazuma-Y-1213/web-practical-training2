@@ -83,21 +83,28 @@ footer li{
 
 
 /* itemXX 部分 */
+/* img & text を横並び */
 .item{
   display:flex;
 }
-.item div{
-  width:50%;
+.item div {
+  width:45%;
+  margin-left:2.5%;
+  margin-right:2.5%;
 }
-
-
-.item table{
-  border-collapse:separate;
-  border-spacing:1rem 0;
+.item img {
+  width: 100%;
 }
+/*----------*/
+/*text部分*/
+.item-text p{
+margin-bottom:2rem;
+}
+/* table 部分の調整*/
 .item th{
   text-align:left;
+  font-weight:normal;
 }
 .item td{
-margin-left:1rem;
+padding-left:1rem;
 }
