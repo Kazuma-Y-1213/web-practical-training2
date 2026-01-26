@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+/*共通部分*/
 /* aタグの設定 */
 a {
   text-decoration: none;
@@ -18,10 +18,34 @@ body{
 header{
   display:flex;
   justify-content:space-between;
+  margin:1rem 0;
 }
 
+/*View More & Back To Products*/
+.link-text {
+  display: block;
+  text-Align: center;
 
+}
 
+/* footer */
+footer {
+
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul {
+  display: flex;
+  gap: 1rem;
+}
+
+footer li {
+  list-style-type: none;
+
+}
+
+/*index.html*/
 /* main リストのデザイン */
 .product-list{
   display:grid;
@@ -40,28 +64,7 @@ header{
  
   list-style-type: none;
 }
-/*View More*/
 
-.link-text{
-  
-  display:block;
-  text-Align:center;
-  
-}
-
-/* footer */
-footer{
-  display:flex;
-  justify-content:space-between;
-}
-footer ul{
-  display:flex;
-  gap: 1rem;
-}
-footer li{
-  list-style-type:none;
-  
-}
 
 
 @media(max-width:800px){
@@ -83,28 +86,44 @@ footer li{
 
 
 /* itemXX 部分 */
-/* img & text を横並び */
+/* img & info を横並び */
 .item{
   display:flex;
+  position:relative;
 }
-.item div {
-  width:45%;
-  margin-left:2.5%;
-  margin-right:2.5%;
-}
+/*画像の大きさ*/
 .item img {
-  width: 100%;
+  width: 50vh;
 }
 /*----------*/
-/*text部分*/
-.item-text p{
-margin-bottom:2rem;
+
+/*info部分全体*/
+.information{
+  margin-left:3rem;
 }
-/* table 部分の調整*/
-.item th{
+/* text部分 */
+.item-text{
+  width:100%;
+}
+.item-text p{
+  margin-bottom:3rem;
+}
+/* 値段 */
+.price{
+  margin-bottom:2rem;
+}
+/* カタログスペック */
+.spec{
+position:absolute;
+bottom:0rem;
+margin-left:0px;
+
+}
+.spec th{
   text-align:left;
   font-weight:normal;
 }
-.item td{
+.spec td{
 padding-left:1rem;
+white-space:nowrap;
 }
