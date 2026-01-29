@@ -1,5 +1,5 @@
 @charset "utf-8";
-/*----共通部分----*/
+/********共通部分*********/
 /* aタグの設定 */
 a {
   text-decoration: none;
@@ -12,6 +12,7 @@ body{
   margin-left:auto;
   margin-right:auto;
 }
+
 
 
 /*header*/
@@ -120,6 +121,25 @@ padding-left:1rem;
 white-space:nowrap;
 }
 
+/* company.html */
+#company{
+  max-width:600px;
+}
+#company table{
+  border-collapse:collapse;
+}
+
+.info th{
+  text-align:left;
+  font-weight:normal;
+}
+.info td{
+  padding-left:3rem;
+}
+.info th,.info td{
+border-bottom:1px solid slategray;
+padding:20px 10px;
+}
 
 /* レスポンシブ *常に最後尾にすること* */
 @media(max-width:800px) {
