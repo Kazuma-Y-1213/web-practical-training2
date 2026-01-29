@@ -125,7 +125,7 @@ white-space:nowrap;
 #company{
   max-width:600px;
 }
-#company .info{
+#company .info tr{
   border-collapse:collapse;
   margin-bottom:20px;
 }
@@ -154,8 +154,10 @@ padding:20px 10px;
   border-bottom:none;
 }
 
+
+
 /* レスポンシブ *常に最後尾にすること* */
-@media(max-width:800px) {
+@media(max-width:500px) {
 
   /*index.html*/
   header img {
@@ -182,6 +184,26 @@ padding:20px 10px;
   }
   .spec{
     position:static;
+  }
+
+  /* company.html */
+   #company .info th
+  ,#company .info td{
+    display:block;
+    width:100%;
+    padding-left:0px;
+    padding:0px 10px;
+  }
+
+  #company .info tr{
+    display: block;
+  }
+  #company .info th{
+    border-bottom:none;
+    padding-bottom:2px;
+  }
+  #company .info td{
+    padding-top:2px;
   }
 }
 
