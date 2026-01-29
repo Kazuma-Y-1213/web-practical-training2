@@ -121,7 +121,7 @@ white-space:nowrap;
 }
 
 
-/*レスポンシブ*/
+/* レスポンシブ *常に最後尾にすること* */
 @media(max-width:800px) {
 
   /*index.html*/
