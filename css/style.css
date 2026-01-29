@@ -18,13 +18,13 @@ body{
 /*header*/
 header{
   display:flex;
-  justify-content:space-between;
+  justify-content:space-between; 
   margin:1rem 0;
 }
 header nav{
-  margin:auto;
-  margin-right:0px;
-}
+  margin:0.35rem 0;
+  margin-right:0px; 
+} 
 
 /*View More & Back To Products*/
 .link-text {
@@ -125,20 +125,33 @@ white-space:nowrap;
 #company{
   max-width:600px;
 }
-#company table{
+#company .info{
   border-collapse:collapse;
+  margin-bottom:20px;
 }
 
-.info th{
+#company .info th{
   text-align:left;
   font-weight:normal;
+  
+  width:30%;
 }
-.info td{
+#company .info td{
   padding-left:3rem;
+  width:70%;
+}
+#company .map iframe{
+  width:100%;
+  height:300px;
+  filter:grayscale(1);/* 引数は 0 ~ 1 の間 -> 彩度が変わる？ */
 }
 .info th,.info td{
 border-bottom:1px solid slategray;
 padding:20px 10px;
+}
+ .info tr:last-child th
+,.info tr:last-child td{
+  border-bottom:none;
 }
 
 /* レスポンシブ *常に最後尾にすること* */
