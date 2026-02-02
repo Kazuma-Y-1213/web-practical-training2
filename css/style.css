@@ -1,4 +1,5 @@
 @charset "utf-8";
+/*rgb(47, 0, 0);*/
 /********共通部分*********/
 /* aタグの設定 */
 a {
@@ -17,14 +18,35 @@ body{
 
 /*header*/
 header{
+  position:sticky;
+  top:0px;
   display:flex;
   justify-content:space-between; 
   margin:1rem 0;
+  
 }
-header nav{
+#hamburger-button{
   margin:0.35rem 0;
   margin-right:0px; 
-} 
+}
+#hamburger-menu{
+background-color:white;
+color:brown;
+font-weight:bold;
+
+position:absolute;
+bottom:0px;
+left:0px;
+/* jsの方でmainの大きさとそろえる */
+height:100px;
+width:100px;
+/* -------------------------- */
+
+}
+#hamburger-menu ul{
+  list-style-type:none;
+}
+
 
 /*View More & Back To Products*/
 .link-text {
