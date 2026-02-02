@@ -28,6 +28,85 @@
     <div class="content wrapper">
       <h1 class="page-title">contact</h1>
     </div>
+    <form action="#" method="post" id="contact-form" >
+      <label>
+        <p>お名前</p>
+        <input type="text" name="name" placeholder="山田 太郎">
+      </label>
+      <label>
+        <p>メールアドレス</p>
+        <input type="email" name="email" placeholder="example@mail.com">
+      </label>
+      <label>
+        <p>電話番号</p>
+        <input type="tel" name="tel" placeholder="090-1234-5678">
+      </label>
+      <label>
+        <p>年齢</p>
+        <input type="number" name="age" placeholder="例）20" min="0" max="200">
+      </label>
+      <div class="form-sex">
+        <p>性別</p>
+        <label>
+            <input type="radio" name="sex" value="man">
+            男 
+        </label>
+        <label>
+            <input type="radio" name="sex" value="woman">
+            女
+        </label>
+        <label>
+          <input type="radio" name="sex" value="otherSex">
+          その他
+        </label>
+        </div>
+        <div class="form-whatIsCategory">
+          <p>お問い合わせ種別</p>
+          <select name="whatIsSupport">
+            <option value="aboutGoods">商品について</option>
+            <option value="restore">修理・サポート</option>
+            <option value="reporting">取材</option>
+            <option value="recruitment">採用</option>
+            <option value="otherSupport">その他</option>
+          </select>
+        </div>
+        <p>興味のある商品(複数可)</p>
+        <div id="form-goodsCategory">
+        <label>
+          <input type="checkbox" name="goodsCategory" checked>チェア
+        </label>
+        <label>
+          <input type="checkbox" name="goodsCategory">テーブル
+        </label>
+        <label>
+          <input type="checkbox" name="goodsCategory">ソファ
+        </label>
+        <label>
+          <input type="checkbox" name="goodsCategory">照明
+        </label>
+        </div>
+        <label>
+          <p>希望納期</p>
+          <input type="date" name="date">
+        </label>
+
+        <label>
+          <p>添付ファイル</p>
+          <input type="file" name="file">
+        </label>
+
+        <label>
+          <p>お問い合わせ内容</p>
+          <textarea placeholder="お問い合わせ内容をご記入ください。"></textarea>
+        </label>
+        
+        <label>
+            <p>
+            <input type="checkbox" name="privacyPolicy">
+            プライバシーポリシーに同意します</p>
+        </label>
+        
+    </form>
   </main>
   <footer>
     <ul>
