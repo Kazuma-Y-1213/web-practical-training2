@@ -197,13 +197,16 @@ padding:20px 10px;
 
   #company .info tr{
     display: block;
+    padding:10px 0px;
+    margin:0px;
   }
   #company .info th{
     border-bottom:none;
-    padding-bottom:2px;
+    padding-bottom:5px;
   }
   #company .info td{
-    padding-top:2px;
+    padding-top:5px;
+    
   }
 }
 
