@@ -25,27 +25,67 @@ header{
   margin:1rem 0;
   
 }
-#hamburger-button{
+.hamburger-button {
+  position:absolute;
+  top:0px;
+  right:0px;
   margin:0.35rem 0;
-  margin-right:0px; 
+  margin-right:0px;
+ 
+  display:flex;
+  flex-direction:column;
+  gap:0.4rem;
+  padding:6px 0;
+
+  z-index:1;
+}
+.hamburger-button div{
+  border:1px solid black;
+  width: 1.5rem;
+}
+#hamburger-button-open{
+  display:flex;
+}
+#hamburger-button-close{
+  display:none;
+}
+#hamburger-button-open div{
+  border-color:blue;
+}
+#hamburger-button-close div{
+  border-color:red;
+
 }
 #hamburger-menu{
-background-color:white;
-color:brown;
-font-weight:bold;
-
-position:absolute;
-bottom:0px;
-left:0px;
-/* jsの方でmainの大きさとそろえる */
-height:100px;
-width:100px;
-/* -------------------------- */
-
+  z-index: 1;
+  color:brown;
+  font-weight: bold;
+  position: absolute;
+  
+}
+#hamburger-background{
+  background-color:black;
+  opacity: 0.6;
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100vw;
+  height:100vh;
+  
+}
+ #hamburger-menu
+,#hamburger-background{
+  
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    display:none;
 }
 #hamburger-menu ul{
   list-style-type:none;
 }
+
 
 
 /*View More & Back To Products*/

@@ -5,23 +5,50 @@ const comStyleMain = getComputedStyle(main);
 const header = document.querySelector("header");
 const comStyleHeader = getComputedStyle(header);
 
-
-
-
-console.log(header);
-
-const gotElementsList = Array(body,main,header);
-
-// hamburgerMenu
+const hamburgerButtonOpen = document.querySelector("#hamburger-button-open");
+const comStyleHamBtnOpen = getComputedStyle(hamburgerButtonOpen);
+const hamburgerButtonClose = document.querySelector("#hamburger-button-close");
+const comStyleHamBtnClose = getComputedStyle(hamburgerButtonClose);
 const hamburgerMenu = document.querySelector("#hamburger-menu");
-console.log(hamburgerMenu);
+const comStyleHamMenu = getComputedStyle(hamburgerMenu);
+const hamburgerBackground = document.querySelector("#hamburger-background");
+const comStyleHamBg = getComputedStyle(hamburgerBackground);
 
-console.log(hamburgerMenu,"hamburgerMenu");
 
-hamburgerMenu.style.width = body.clientWidth + "px";
-const headerMarginTop = header.clientHeight
-hamburgerMenu.style.height = main.clientHeight - (header.width + header.style.marginTop + header.style.marginBottom)  + "px";
-console.log(header.clientWidth ,comStyleHeader.marginTop , comStyleHeader.marginBottom , "header width");
-const bodyMarginLeft = (window.innerWidth - body.clientWidth) / 2;
-hamburgerMenu.style.marginLeft = bodyMarginLeft + "px";
-// -------------
+
+
+const hamburgerAnimationOption = {
+  duration:2000
+}
+hamburgerButtonOpen.addEventListener("click"
+  ,()=>{
+    // hamburgerMenu.animate(
+    //   {
+        
+    //   }
+    //   ,hamburgerAnimationOption
+    // );
+
+    hamburgerBackground.style.display = "initial";
+    hamburgerButtonOpen.style.display = "none";
+    hamburgerButtonClose.style.display = "flex";
+
+    console.log(comStyleHamMenu.display);
+    
+
+  }
+);
+hamburgerButtonClose.addEventListener("click"
+  ,()=>{
+
+     hamburgerBackground.style.display = "none";
+     hamburgerButtonOpen.style.display = "flex";
+     hamburgerButtonClose.style.display = "none";
+  }
+  
+);
+/*if (comStyleHamBg.display == "block") {
+      hamburgerBackground.style.display = "none"; */
+
+
+
