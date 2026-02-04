@@ -27,24 +27,32 @@
   <main>
     <div class="content wrapper">
       <h1 class="page-title">contact</h1>
-    </div>
+   
     <form action="#" method="post" id="contact-form" >
+      <div id="form-name">
       <label>
         <p>お名前</p>
         <input type="text" name="name" placeholder="山田 太郎">
       </label>
+      </div>
+      <div id="form-email">
       <label>
         <p>メールアドレス</p>
         <input type="email" name="email" placeholder="example@mail.com">
       </label>
+      </div>
+      <div id="form-phoneNumber">
       <label>
         <p>電話番号</p>
         <input type="tel" name="tel" placeholder="090-1234-5678">
       </label>
+      </div>
+      <div id="form-age">
       <label>
         <p>年齢</p>
         <input type="number" name="age" placeholder="例）20" min="0" max="200">
       </label>
+      </div>
       <div class="form-sex">
         <p>性別</p>
         <label>
@@ -70,42 +78,48 @@
             <option value="otherSupport">その他</option>
           </select>
         </div>
-        <p>興味のある商品(複数可)</p>
+        
         <div id="form-goodsCategory">
+        <p>興味のある商品(複数可)</p>
         <label>
-          <input type="checkbox" name="goodsCategory" checked>チェア
+          <input type="checkbox" name="goodsCategory" checked><p>チェア</p>
         </label>
         <label>
-          <input type="checkbox" name="goodsCategory">テーブル
+          <input type="checkbox" name="goodsCategory"><p>テーブル</p>
         </label>
         <label>
-          <input type="checkbox" name="goodsCategory">ソファ
+          <input type="checkbox" name="goodsCategory"><p>ソファ</p>
         </label>
         <label>
-          <input type="checkbox" name="goodsCategory">照明
+          <input type="checkbox" name="goodsCategory"><p>照明</p>
         </label>
         </div>
-        <label>
-          <p>希望納期</p>
-          <input type="date" name="date">
-        </label>
-
+        <div id="form-deadLine">
+          <label>
+            <p>希望納期</p>
+            <input type="date" name="date">
+          </label>
+        </div>
+        <div id="form-attachedFile">
         <label>
           <p>添付ファイル</p>
           <input type="file" name="file">
         </label>
-
+        </div>
+        <div id="form-support">
         <label>
           <p>お問い合わせ内容</p>
           <textarea placeholder="お問い合わせ内容をご記入ください。"></textarea>
         </label>
-        
+        </div>
+        <div id="form-privacyPolicy">
         <label>
             <p>
             <input type="checkbox" name="privacyPolicy">
             プライバシーポリシーに同意します</p>
         </label>
-        
+        </div>
+        </div>
     </form>
   </main>
   <footer>
