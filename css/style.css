@@ -25,7 +25,7 @@ header{
   margin:1rem 0;
   
 }
-.hamburger-button {
+#hamburger-button {
   position:absolute;
   top:0px;
   right:0px;
@@ -38,23 +38,29 @@ header{
   padding:6px 0;
 
   z-index:1;
+  overflow-x: hidden;
 }
-.hamburger-button div{
-  border:1px solid black;
-  width: 1.5rem;
-}
-#hamburger-button-open{
+#hamburger-button div{
   display:flex;
 }
-#hamburger-button-close{
-  display:none;
+#hamburger-button div div{
+  border:1px solid black;
+  width: 0.75rem;
+ 
+  
+  
 }
-#hamburger-button-open div{
-  border-color:blue;
+#hamburger-button{
+  display:flex;
 }
-#hamburger-button-close div{
-  border-color:red;
 
+#hamburger-button div :first-child{
+  border-color:blue;
+  
+}
+#hamburger-button div :last-child{
+  border-color:red;
+  
 }
 #hamburger-menu{
   z-index: 1;
