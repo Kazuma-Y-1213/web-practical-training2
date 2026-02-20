@@ -238,14 +238,14 @@ hamburgerButton.addEventListener("click", () => {
     }, hamOpDuraTime * 1.5);
   }
 });
-/*
-hamburgerButtonClose.addEventListener("click"
-  ,()=>{
 
-   
+const jinsei = document.querySelector("#jinsei");
+
+class a {
+  constructor(element){
+    this.element = element;
+    this.comStyle = getComputedStyle(this.element);
+    console.log(`conStyle : ${this.comStyle}`);
   }
-  
-);
-*/
-/*if (comStyleHamBg.display == "block") {
-      hamburgerBackground.style.display = "none"; */
+}
+const chart = new a(jinsei);

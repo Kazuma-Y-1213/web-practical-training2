@@ -115,9 +115,15 @@ footer li {
   list-style-type: none;
 }
 /*-----------------*/
-
-
-
+/* -------*/
+#jinsei{
+  border-radius:3px;
+  width:100%;
+  height:30rem;
+  margin:3rem 0;
+  border:1px solid skyblue;
+}
+/* ------ */
 /*index.html*/
 /* main リストのデザイン */
 .product-list{
