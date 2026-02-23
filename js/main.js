@@ -23,14 +23,14 @@ class Window {
     //includes の返り値 はtrue/false.
   }
   setBackGroundColor(colorCode) {
-    if (checkedColorCode(colorCode)) {
+    if (this.checkedColorCode(colorCode)) {
       this.element.style.backgroundColor = colorCode;
     } else {
       console.log(`setBackGroundColor:${colorCode}`);
     }
   }
   setTextColor(colorCode) {
-    if (checkedColorCode(colorCode)) {
+    if (this.checkedColorCode(colorCode)) {
       this.element.style.color = colorCode;
     } else {
       console.log(`setTextColor:${colorCode}`);
@@ -74,7 +74,7 @@ class Window {
 
   makeTitleTextRectangle(text,parentElement) {
     this.titleTextRectangle = createElement("div");
-    this.titleTextRectangle.innerText(text);
+    this.titleTextRectangle.innerText = text;
     parentElement.appendChild(this.titleTextRectangle);
   }
   makeMinBtn(parentElement) {
@@ -89,11 +89,13 @@ class Window {
     this.delBtn = createElement("div");
     parentElement.appendChild(this.delBtn);
   }
-  makeParentTitleBar(){
-    //muriunkobaka
+  all(){
+    
   }
   margedTitleBar() {
-    this.makeTitleText(parentElement);
+    this.titleBarParent = createElement("div");
+    const parentElement = this.titleBarParent;;
+    this.makeTitleTextRectangle("てすとああああ",parentElement);
     this.makeMinBtn(parentElement);
     this.makeMaxBtn(parentElement);
     this.makeDelBtn(parentElement);
