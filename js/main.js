@@ -239,7 +239,7 @@ hamburgerButton.addEventListener("click", () => {
   }
 });
 
-
+// ここから クラス
 
 const unitAry = ["px", "em", "rem", "%", "vw", "vh"];
 function showUnitAry() {
@@ -329,7 +329,7 @@ class Window {
     parentElement.appendChild(this.delBtn);
   }
   makeParentTitleBar() {
-    //muriunkobaka
+    // どうする
   }
   margedTitleBar() {
     this.makeTitleText(parentElement);
@@ -370,7 +370,7 @@ class temp {
       console.log(`CliWindow's class: ${this.class}`);
     } else {
       console.log(
-        `CliWindow's id and class that is none.\nid: ${this.id}\nclass: ${this.class}`,
+        `.\nid: ${this.id}\nclass: ${this.class}`,
       );
     }
   }
