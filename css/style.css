@@ -1,9 +1,11 @@
 @charset "utf-8";
-.default-dark-theme{
-  background-color:#000000;
-  color:#ffffff;
+#currentDirectoryText{
+  white-space:nowrap;
+  margin-right:0.5rem;
 }
-.title-bar-layout{
+label{
   display:flex;
-  gap:1.5rem;
+}
+content{
+  display:none;
 }
