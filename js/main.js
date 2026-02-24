@@ -262,14 +262,14 @@ class Window {
     //includes の返り値 はtrue/false.
   }
   setBackGroundColor(colorCode) {
-    if (checkedColorCode(colorCode)) {
+    if (this.checkedColorCode(colorCode)) {
       this.element.style.backgroundColor = colorCode;
     } else {
       console.log(`setBackGroundColor:${colorCode}`);
     }
   }
   setTextColor(colorCode) {
-    if (checkedColorCode(colorCode)) {
+    if (this.checkedColorCode(colorCode)) {
       this.element.style.color = colorCode;
     } else {
       console.log(`setTextColor:${colorCode}`);
@@ -333,10 +333,11 @@ class Window {
     this.parentTitleBar = createElement("div");
   }
   margedTitleBar() {
-    this.makeTitleText(parentElement);
-    this.makeMinBtn(parentElement);
-    this.makeMaxBtn(parentElement);
-    this.makeDelBtn(parentElement);
+    this.makeParentTitleBar();
+    this.makeTitleText(this.parentElement);
+    this.makeMinBtn(this.parentElement);
+    this.makeMaxBtn(this.parentElement);
+    this.makeDelBtn(this.parentElement);
   }
   setTitleBarBtnStyle() {
     this.element.setAttribute("class", ".title-bar-layout");
