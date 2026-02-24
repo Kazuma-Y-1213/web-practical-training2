@@ -330,6 +330,7 @@ class Window {
   }
   makeParentTitleBar() {
     // どうする
+    this.parentTitleBar = createElement("div");
   }
   margedTitleBar() {
     this.makeTitleText(parentElement);
