@@ -303,7 +303,7 @@ class Window {
     }
   }
   setDefaultColor() {
-    this.setBackGroundColor("#000000");
+    this.setBackGroundColor("#443333");
     this.setTextColor("#ffffff");
   }
   setTestWidthHeight() {
@@ -312,29 +312,29 @@ class Window {
   }
 
   makeTitleTextRectangle(text, parentElement) {
-    this.titleTextRectangle = createElement("div");
-    this.titleTextRectangle.innerText(text);
+    this.titleTextRectangle = document.createElement("div");
+    this.titleTextRectangle.innerText = text;
     parentElement.appendChild(this.titleTextRectangle);
   }
   makeMinBtn(parentElement) {
-    this.minBtn = createElement("div");
+    this.minBtn = document.createElement("div");
     parentElement.appendChild(this.minBtn);
   }
   makeMaxBtn(parentElement) {
-    this.maxBtn = createElement("div");
+    this.maxBtn = document.createElement("div");
     parentElement.appendChild(this.maxBtn);
   }
   makeDelBtn(parentElement) {
-    this.delBtn = createElement("div");
+    this.delBtn = document.createElement("div");
     parentElement.appendChild(this.delBtn);
   }
   makeParentTitleBar() {
     // どうする
-    this.parentTitleBar = createElement("div");
+    this.parentTitleBar = document.createElement("div");
   }
   margedTitleBar() {
     this.makeParentTitleBar();
-    this.makeTitleText(this.parentElement);
+    this.makeTitleTextRectangle("Window",this.parentElement);
     this.makeMinBtn(this.parentElement);
     this.makeMaxBtn(this.parentElement);
     this.makeDelBtn(this.parentElement);
