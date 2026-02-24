@@ -382,3 +382,4 @@ const cliWindow = new CliWindow(body);
 console.log(cliWindow.checkedColorCode("#aaa"));
 cliWindow.makeWindow();
 
+
