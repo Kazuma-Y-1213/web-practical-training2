@@ -10,140 +10,355 @@
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- <script src="js/main.js" defer></script> -->
+  
 </head>
 
 <body>
-  index.html
   <header>
     <h1>
-      <a href ="./index.html">
-      <img src="./img/logo.svg" alt="Furniture Design">
+      <a href="#">
+        <img id="logo" src="./img/logo.svg" alt="Furniture Design">
       </a>
     </h1>
-    <nav>
-      三
-    </nav>
-  </header>
-  <main>
-    <div id="top" class = "wrapper">
-      <ul class = "product-list">
-        <li>
-          <a href="./item1.html">
-            <img src="./img/item1.jpg" alt="item1.jpg">
-            <p>変更</p>
-            <p>￥99,999 + tax</p>
-          </a>
-        </li>
-        <li>
-          <a href="./item2.html">
-            <img src="./img/item2.jpg" alt="item2.jpg">
-            <p>プロダクトタイトルプロダクトタイトル</p>
-            <p>￥99,999 + tax</p>
-          </a>
-        </li>
-        <li>
-          <a href="./item3.html">
-            <img src="./img/item3.jpg" alt="item3.jpg">
-            <p>プロダクトタイトルプロダクトタイトル</p>
-            <p>￥99,999 + tax</p>
-          </a>
-        </li>
-        <li>
-          <a href="./item4.html">
-            <img src="./img/item4.jpg" alt="item4.jpg">
-            <p>プロダクトタイトルプロダクトタイトル</p>
-            <p>￥99,999 + tax</p>
-          </a>
-        </li>
-        <li>
-          <a href="./item5.html">
-            <img src="./img/item5.jpg" alt="item6.jpg">
-            <p>プロダクトタイトルプロダクトタイトル</p>
-            <p>￥99,999 + tax</p>
-          </a>
-        </li>
-        <li>
-          <a href="./item6.html">
-            <img src="./img/item6.jpg" alt="item6.jpg">
-            <p>プロダクトタイトルプロダクトタイトル</p>
-            <p>￥99,999 + tax</p>
-          </a>
-        </li>
-        <li>
-          <a href="./item7.html">
-            <img src="./img/item7.jpg" alt="item7.jpg">
-            <p>プロダクトタイトルプロダクトタイトル</p>
-            <p>￥99,999 + tax</p>
-          </a>
-        </li>
-        <li>
-          <a href="./item8.html">
-            <img src="./img/item8.jpg" alt="item8.jpg">
-            <p>プロダクトタイトルプロダクトタイトル</p>
-            <p>￥99,999 + tax</p>
-          </a>
-        </li>
-        <li>
-          <a href="./item9.html">
-            <img src="./img/item9.jpg" alt="item9.jpg">
-            <p>プロダクトタイトルプロダクトタイトル</p>
-            <p>￥99,999 + tax</p>
-          </a>
-        </li>
-        <li>
-          <a href="./item10.html">
-            <img src="./img/item10.jpg" alt="item10.jpg">
-            <p>プロダクトタイトルプロダクトタイトル</p>
-            <p>￥99,999 + tax</p>
-          </a>
-        </li>
-        <li>
-          <a href="./item11.html">
-            <img src="./img/item11.jpg" alt="item11.jpg">
-            <p>プロダクトタイトルプロダクトタイトル</p>
-            <p>￥99,999 + tax</p>
-          </a>
-        </li>
-        <li>
-          <a href="./item12.html">
-            <img src="./img/item12.jpg" alt="item12.jpg">
-            <p>プロダクトタイトルプロダクトタイトル</p>
-            <p>￥99,999 + tax</p>
-          </a>
-        </li>
-        <li>
-          <a href="./item13.html">
-            <img src="./img/item13.jpg" alt="item13.jpg">
-            <p>プロダクトタイトルプロダクトタイトル</p>
-            <p>￥99,999 + tax</p>
-          </a>
-        </li>
-        <li>
-          <a href="./item14.html">
-            <img src="./img/item14.jpg" alt="item14.jpg">
-            <p>プロダクトタイトルプロダクトタイトル</p>
-            <p>￥99,999 + tax</p>
-          </a>
-        </li>
-        <li>
-          <a href="./item15.html">
-            <img src="./img/item15.jpg" alt="item15.jpg">
-            <p>プロダクトタイトルプロダクトタイトル</p>
-            <p>￥99,999 + tax</p>
-          </a>
-        </li>
-        <li>
-          <a href="./item16.html">
-            <img src="./img/item16.jpg" alt="item16.jpg">
-            <p>プロダクトタイトルプロダクトタイトル</p>
-            <p>￥99,999 + tax</p>
-          </a>
-        </li>
-      </ul>
-      <a class="link-text" href="company.html">Company</a><!-- 後で消す-->
-      <a class="link-text" href="products.html">View More</a>
+  
+  
+  <nav id="hamburger-button">
+    <div id="ham-line-parent-0">
+      <div></div>
+      <div></div>
     </div>
+    <div id="ham-line-parent-1">
+      <div></div>
+      <div></div>
+    </div>
+    <div id="ham-line-parent-2">
+      <div></div>
+      <div></div>
+    </div>
+  </nav><!--
+  <nav id="hamburger-button-close" class="hamburger-button">
+    <div></div>
+    <div></div>
+    <div></div>
+  </nav>-->
+  <div id="hamburger-background"></div>
+  
+  </header>
+    <nav id="hamburger-menu">
+      <ul>
+        <li>products</li>
+        <li>about</li>
+        <li>company</li>
+        <li>contact</li>
+      </ul>
+    </nav>
+  
+  
+  
+  
+  <main>
+
+    <!-- index.html -->
+        <section id="top index-section" class="wrapper">
+          <ul class="product-list">
+            <li>
+              <a href="./item1.html">
+                <img src="./img/item1.jpg" alt="item1.jpg">
+                <p>変更</p>
+                <p>￥99,999 + tax</p>
+              </a>
+            </li>
+            <li>
+              <a href="./item2.html">
+                <img src="./img/item2.jpg" alt="item2.jpg">
+                <p>プロダクトタイトルプロダクトタイトル</p>
+                <p>￥99,999 + tax</p>
+              </a>
+            </li>
+            <li>
+              <a href="./item3.html">
+                <img src="./img/item3.jpg" alt="item3.jpg">
+                <p>プロダクトタイトルプロダクトタイトル</p>
+                <p>￥99,999 + tax</p>
+              </a>
+            </li>
+            <li>
+              <a href="./item4.html">
+                <img src="./img/item4.jpg" alt="item4.jpg">
+                <p>プロダクトタイトルプロダクトタイトル</p>
+                <p>￥99,999 + tax</p>
+              </a>
+            </li>
+            <li>
+              <a href="./item5.html">
+                <img src="./img/item5.jpg" alt="item6.jpg">
+                <p>プロダクトタイトルプロダクトタイトル</p>
+                <p>￥99,999 + tax</p>
+              </a>
+            </li>
+            <li>
+              <a href="./item6.html">
+                <img src="./img/item6.jpg" alt="item6.jpg">
+                <p>プロダクトタイトルプロダクトタイトル</p>
+                <p>￥99,999 + tax</p>
+              </a>
+            </li>
+            <li>
+              <a href="./item7.html">
+                <img src="./img/item7.jpg" alt="item7.jpg">
+                <p>プロダクトタイトルプロダクトタイトル</p>
+                <p>￥99,999 + tax</p>
+              </a>
+            </li>
+            <li>
+              <a href="./item8.html">
+                <img src="./img/item8.jpg" alt="item8.jpg">
+                <p>プロダクトタイトルプロダクトタイトル</p>
+                <p>￥99,999 + tax</p>
+              </a>
+            </li>
+            <li>
+              <a href="./item9.html">
+                <img src="./img/item9.jpg" alt="item9.jpg">
+                <p>プロダクトタイトルプロダクトタイトル</p>
+                <p>￥99,999 + tax</p>
+              </a>
+            </li>
+            <li>
+              <a href="./item10.html">
+                <img src="./img/item10.jpg" alt="item10.jpg">
+                <p>プロダクトタイトルプロダクトタイトル</p>
+                <p>￥99,999 + tax</p>
+              </a>
+            </li>
+            <li>
+              <a href="./item11.html">
+                <img src="./img/item11.jpg" alt="item11.jpg">
+                <p>プロダクトタイトルプロダクトタイトル</p>
+                <p>￥99,999 + tax</p>
+              </a>
+            </li>
+            <li>
+              <a href="./item12.html">
+                <img src="./img/item12.jpg" alt="item12.jpg">
+                <p>プロダクトタイトルプロダクトタイトル</p>
+                <p>￥99,999 + tax</p>
+              </a>
+            </li>
+            <li>
+              <a href="./item13.html">
+                <img src="./img/item13.jpg" alt="item13.jpg">
+                <p>プロダクトタイトルプロダクトタイトル</p>
+                <p>￥99,999 + tax</p>
+              </a>
+            </li>
+            <li>
+              <a href="./item14.html">
+                <img src="./img/item14.jpg" alt="item14.jpg">
+                <p>プロダクトタイトルプロダクトタイトル</p>
+                <p>￥99,999 + tax</p>
+              </a>
+            </li>
+            <li>
+              <a href="./item15.html">
+                <img src="./img/item15.jpg" alt="item15.jpg">
+                <p>プロダクトタイトルプロダクトタイトル</p>
+                <p>￥99,999 + tax</p>
+              </a>
+            </li>
+            <li>
+              <a href="./item16.html">
+                <img src="./img/item16.jpg" alt="item16.jpg">
+                <p>プロダクトタイトルプロダクトタイトル</p>
+                <p>￥99,999 + tax</p>
+              </a>
+            </li>
+          </ul>
+          <a class="link-text" href="company.html">Company</a><!-- 後で消す-->
+          <a class="link-text" href="products.html">View More</a>
+        </div>
+    <!-- itemXX.html -->
+        <section id="item-section" class="content wrapper">
+          <h1 class="page-title">NATURAL FLOW CHAIR</h1>
+          <div class="item">
+            <div class="item-img">
+              <img src="./img/item1.jpg" alt="item1.jpg">
+            </div>
+            <div class="information">
+              <div class="item-text">
+                <p>
+                  木の温もりとシンプルなデザインが調和した、日常使いに最適なチェアです。
+                  無駄を省いたフォルムは空間を選ばず、ダイニングやワークスペースなど
+                  さまざまなシーンに自然となじみます。 座る人の動きを妨げない、
+                  すっきりとした佇まいが魅力です。
+                </p>
+                <p>
+                  背中にやさしくフィットする背もたれと、安定感のある座面設計により、
+                  長時間座っても疲れにくい座り心地を実現しました。
+                  毎日の食事や作業時間を、快適で心地よいひとときに変えてくれる一脚です。
+                </p>
+              </div>
+              <div class="spec">
+                <p class="price">￥2500 + tax</p>
+                <table>
+                  <tr>
+                    <th>SIZE:</th>
+                    <td>W999 x D999 x H999</td>
+                  </tr>
+                  <tr>
+                    <th>COLOR:</th>
+                    <td>テキスト</td>
+                  </tr>
+                  <tr>
+                    <th>MATERIAL:</th>
+                    <td>テキストテキストテキスト</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <a class="link-text" href="products.html">Back To Products</a>
+        </div>
+        <!-- company.html -->
+          <section id="company-section" class="content wrapper">
+            <h1 class="page-title">Company</h1>
+            <div id="company">
+              <table class="info">
+                <tr>
+                  <th>社名</th>
+                  <td>株式会社ファニチャーデザイン</td>
+                </tr>
+                <tr>
+                  <th>住所</th>
+                  <td>&#12306;107-0062 東京都港区南青山1丁目XXXXXX</td>
+                </tr>
+                <tr>
+                  <th>設立</th>
+                  <td>XXXX年XX月</td>
+                </tr>
+                <tr>
+                  <th>資本金</th>
+                  <td>1000万円</td>
+                </tr>
+                <tr>
+                  <th>従業員数</th>
+                  <td>261名</td>
+                </tr>
+                <tr>
+                  <th>事業内容</th>
+                  <td>家具、インテリアの企画・生産<br>
+                    家具・インテリアの販売<br>
+                    店舗の企画・デザイン・設計
+                  </td>
+                </tr>
+              </table>
+              <div class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d204.9291060351189!2d136.50826427717712!3d34.73377954651238!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60040d66b4a24007%3A0xfb311ff5d34ca49d!2z5ZCN5Y-k5bGL5aSn5Y6f5a2m5ZyS5rSl44Kt44Oj44Oz44OR44K5!5e0!3m2!1sen!2sjp!4v1769656129725!5m2!1sen!2sjp"
+                  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+          <section id="contact" class="content wrapper">
+            <h1 class="page-title">contact</h1>
+          
+            <form action="#" method="post" id="contact-form">
+              <div id="form-name">
+                <label>
+                  <p>お名前</p>
+                  <input type="text" name="name" placeholder="山田 太郎">
+                </label>
+              </div>
+              <div id="form-email">
+                <label>
+                  <p>メールアドレス</p>
+                  <input type="email" name="email" placeholder="example@mail.com">
+                </label>
+              </div>
+              <div id="form-phoneNumber">
+                <label>
+                  <p>電話番号</p>
+                  <input type="tel" name="tel" placeholder="090-1234-5678">
+                </label>
+              </div>
+              <div id="form-age">
+                <label>
+                  <p>年齢</p>
+                  <input type="number" name="age" placeholder="例）20" min="0" max="200">
+                </label>
+              </div>
+              <div class="form-sex">
+                <p>性別</p>
+                <label>
+                  <input type="radio" name="sex" value="man">
+                  男
+                </label>
+                <label>
+                  <input type="radio" name="sex" value="woman">
+                  女
+                </label>
+                <label>
+                  <input type="radio" name="sex" value="otherSex">
+                  その他
+                </label>
+              </div>
+              <div class="form-whatIsCategory">
+                <p>お問い合わせ種別</p>
+                <select name="whatIsSupport">
+                  <option value="aboutGoods">商品について</option>
+                  <option value="restore">修理・サポート</option>
+                  <option value="reporting">取材</option>
+                  <option value="recruitment">採用</option>
+                  <option value="otherSupport">その他</option>
+                </select>
+              </div>
+          
+              <div id="form-goodsCategory">
+                <p>興味のある商品(複数可)</p>
+                <label>
+                  <input type="checkbox" name="goodsCategory" checked>
+                  <p>チェア</p>
+                </label>
+                <label>
+                  <input type="checkbox" name="goodsCategory">
+                  <p>テーブル</p>
+                </label>
+                <label>
+                  <input type="checkbox" name="goodsCategory">
+                  <p>ソファ</p>
+                </label>
+                <label>
+                  <input type="checkbox" name="goodsCategory">
+                  <p>照明</p>
+                </label>
+              </div>
+              <div id="form-deadLine">
+                <label>
+                  <p>希望納期</p>
+                  <input type="date" name="date">
+                </label>
+              </div>
+              <div id="form-attachedFile">
+                <label>
+                  <p>添付ファイル</p>
+                  <input type="file" name="file">
+                </label>
+              </div>
+              <div id="form-support">
+                <label>
+                  <p>お問い合わせ内容</p>
+                  <textarea placeholder="お問い合わせ内容をご記入ください。"></textarea>
+                </label>
+              </div>
+              <div id="form-privacyPolicy">
+                <label>
+                  <p>
+                    <input type="checkbox" name="privacyPolicy">
+                    プライバシーポリシーに同意します
+                  </p>
+                </label>
+              </div>
+          </div>
   </main>
   <footer>
     <ul>
@@ -153,5 +368,7 @@
     </ul>
     <p>&copy; Furniture Design</p>
   </footer>
+  <script src="js/main.js"></script>
 </body>
-</html>
+
+
